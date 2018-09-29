@@ -9,6 +9,7 @@ new const AUTHOR[] = "ScrewedUP"
 
 public plugin_init() {
 	register_plugin(PLUGIN, VERSION, AUTHOR)
+	register_cvar("SUPRESET", PLUGIN_VERSION, FCVAR_SERVER|FCVAR_SPONLY|FCVAR_UNLOGGED)
 	register_clcmd("say /rs","cmd_rs");
 	register_clcmd("say_team /rs","cmd_rs");
 	register_clcmd("say rs","cmd_rs");
